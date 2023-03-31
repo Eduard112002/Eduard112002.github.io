@@ -133,7 +133,7 @@ body{
 
 
 .menu__side_background {
-    background:  #FF3E79 center  url(img/icon.png)no-repeat;
+    background:  #FF3E79 center  url('img/icon.png')no-repeat;
     margin-right: 0;
     margin-left: 16px;
     outline:none;
@@ -155,19 +155,19 @@ body{
 }
 
 .add__message_background{
-    background:  #FF3E79 center  url(img/messages.png)no-repeat;
+    background:  #FF3E79 center  url('img/messages.png')no-repeat;
 }
 
 .add__man_background {
-    background:  #FF3E79 center  url(img/man.png)no-repeat;
+    background:  #FF3E79 center  url('img/man.png')no-repeat;
 }
 
 .add__options_background {
-    background:  #FF3E79 center  url(img/instrym.png)no-repeat;
+    background:  #FF3E79 center  url('img/instrym.png')no-repeat;
 }
 
 .add__Search_background {
-    background:  #FF3E79 center  url(img/search_book.png)no-repeat;
+    background:  #FF3E79 center  url('img/search_book.png')no-repeat;
     margin-right: 0;
 }
 .add button:nth-child(1),
