@@ -437,6 +437,7 @@ h1{
     font-family: 'TT LakesReg', sans-serif;
     letter-spacing: -0.2px;
     margin-right: 78px;
+    color: black;
 }
 
 @media (min-width: 768px) {
