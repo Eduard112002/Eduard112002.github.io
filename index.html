@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>2_services</title>
@@ -12,7 +12,7 @@
         <button class="menu__side_background transition" tabindex="1"></button>
     </nav>
     <div class="logo">
-        <img src='img/Group.png' alt="логотип">
+        <img src="img/Group.svg" alt="Логотип">
     </div>
     <nav class="add">
         <button class="add__telephone_background transition"></button>
@@ -24,15 +24,15 @@
 </header>
 <main>
     <div class="heading">
-        <h1>Услуги и сервисы</h1>
+        <h1 class="main-title">Услуги и сервисы</h1>
         <nav class="info">
             <label>
                 <span class="info__text">Оставить заявку</span>
-                <input type="button" class="add__options_background transition">
+                <button class="add__options_background transition"></button>
             </label>
             <label>
                 <span class="info__text">Статус ремонта</span>
-                <input type="button" class="add__Search_background transition">
+                <button class="add__Search_background transition"></button>
             </label>
         </nav>
     </div>
@@ -50,15 +50,18 @@
     </nav>
     </div>
     <section class="content">
-        <div class="content_left">
-            <div class="content__history"><p>Мы являемся авторизованным  сервисным  центром по ремонту техники  Dell. Только у
+        <div class="content__history"><p>Мы являемся авторизованным  сервисным  центром по ремонту техники  Dell. Только у
                 нас  вы можете  отремонтировать свой ноутбук
-                 Dell с  официальной гарантией  производителя.</p></div>
-            <div class="content__history content__history_tablet"><p>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера<span class="content__history_text">,что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span></p>
-            </div>
+                 Dell с  официальной гарантией  производителя.
+            <p class="content__history content__history_tablet">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера<span class="content__history_text">,что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span></p>
             <button class="content__farther">Читать далее</button>
         </div>
-        <div class="content__ofis-img"><img class='content__ofis-img_size' src="img/office1120.png"  alt="наш офис"></div>
+        <div class="content__ofis-img">
+           <picture>
+               <source class='content__ofis-img_size' srcset="img/offiсe_320.png" media="(max-width: 768px)">
+               <img class='content__ofis-img_size' src="img/offiсe_1120.png" alt="наш офис">
+           </picture>
+        </div>
     </section>
 </main>
 </body>
