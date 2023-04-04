@@ -159,11 +159,6 @@ main{
     cursor: pointer;
 }
 
-.transition:hover{
-    box-shadow: 2px 2px 0 #41F6D7;
-}
-
-
 .menu__side_background {
     outline:none;
     cursor:pointer;
