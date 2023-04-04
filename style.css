@@ -404,7 +404,7 @@ main{
 
 @media (min-width: 768px) {
     .content__history_tablet{
-       display: inline-block;
+       display: inline;
         margin-top: 0;
         margin-bottom: 10px;
     }
