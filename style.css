@@ -56,18 +56,18 @@ body{
     }
 }
 
-main{
+.the-essence{
     padding-left: 16px;
 }
 
 @media  (min-width: 768px){
-    main{
+    .the-essence{
         padding-left: 24px;
     }
 }
 
 @media  (min-width: 1120px){
-    main{
+    .the-essence{
         padding-left: 32px;
     }
 }
