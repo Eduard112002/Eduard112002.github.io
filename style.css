@@ -34,7 +34,6 @@ body{
 .head {
     display: flex;
     background-color: #FFFFFF;
-    height: 88px;
     border-bottom: 1px solid #D9FFF5;
     flex-wrap: wrap;
     padding-top: 24px;
@@ -152,14 +151,14 @@ body{
     }
 }
 
-.head_logo{
-    padding-left: 16px;
+.head__logo{
+    margin-left: 16px;
     transform: translateY( -6px);
 }
 
 @media (min-width:768px) {
-    .head_logo{
-        padding-left: 42px;
+    .head__logo{
+        margin-left: 42px;
     }
 }
 
@@ -171,14 +170,12 @@ body{
     margin-right: 16px;
     background-color: #FF3E79;
     cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .menu__side_background {
-    outline:none;
-    cursor:pointer;
     background-image: url("img/icon.svg");
-    background-repeat: no-repeat;
-    background-position: center;
     margin-right: 0;
 }
 
@@ -188,35 +185,23 @@ body{
 
 .add__telephone_background{
    background-image: url("img/tel.svg");
-   background-position: center;
-   background-repeat: no-repeat;
 }
 
 .add__message_background{
     background-image: url("img/messages.svg");
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 .add__man_background{
     background-image: url("img/man.svg");
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 .add__options_background{
     background-image: url("img/options.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    outline: none;
 }
 
 .add__Search_background {
     margin-right: 0;
     background-image: url("img/search_boo.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    outline: none;
 }
 
 .info__but_size{
@@ -426,16 +411,19 @@ body{
     font-size: 16px;
     line-height: 24px;
     border: 2px solid #F8F8F8;
-    background-repeat: no-repeat;
-    background-image: url("img/arrow.svg");
     background-color: #F8F8F8;
-    background-position: 5px 14px;
     font-family: 'TT LakesReg', sans-serif;
     letter-spacing: -0.2px;
     cursor: pointer;
     display:block;
     padding-left: 30px;
     padding-top: 10px;
+}
+
+.content__farther:before{
+    content: url("img/arrow.svg");
+    transform: translateX(-24px);
+    position: absolute;
 }
 
 @media (min-width: 768px) {
