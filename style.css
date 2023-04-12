@@ -55,10 +55,6 @@ body{
     }
 }
 
-.head__logo{
-    align-self: center;
-}
-
 .head:after{
     content:'';
     position: absolute;
