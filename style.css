@@ -188,8 +188,9 @@ body{
 
     border: #FFFFFF solid 1px;
     background:#FFFFFF;
-
-    
+ 
+    padding: 0 0 0 0;
+    margin-left: -10px;
 }
 
 .language__choice:hover{
