@@ -3,6 +3,7 @@ new Swiper('.swiper-container', {
         el: '.swiper-pagination',
         clickable: true
     },
+    speed: 700,
 });
 
 function further() {
