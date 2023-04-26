@@ -24,8 +24,7 @@ function further() {
 
             but.textContent = 'Скрыть';
             but.classList.add('upheaval__bott','change');
-            but.classList.remove('upheaval__top');
-
+                
         } else {
         tablet_see.forEach( function (element){
                 element.classList.remove('see');
@@ -33,7 +32,7 @@ function further() {
             })
             but.textContent = 'Показать все';
             but.classList.remove('upheaval__bott', 'change');
-            but.classList.add('upheaval__top');
+           
         }
 
     }
@@ -49,8 +48,7 @@ function further() {
 
             but.textContent = 'Скрыть';
             but.classList.add('upheaval__bott', 'change');
-            but.classList.remove('upheaval__top');
-
+            
         }else{
 
             additionally_see_ad.forEach( function (element){
@@ -59,7 +57,7 @@ function further() {
             })
             but.textContent = 'Показать все';
             but.classList.remove('upheaval__bott', 'change');
-            but.classList.add('upheaval__top');
+            
         }
     }
 }
