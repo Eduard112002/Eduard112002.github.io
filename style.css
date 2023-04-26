@@ -67,10 +67,6 @@ body{
     margin-right: 16px !important;
 }
 
-.swiper-wrapper{
-    padding-top: 16px;
-}
-
 .swiper-container:before{
     content: '';
     position: absolute;
