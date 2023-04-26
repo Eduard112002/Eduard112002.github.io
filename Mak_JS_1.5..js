@@ -1,4 +1,11 @@
 
+new Swiper('.swiper-container', {
+        pagination:{
+            el: '.swiper-pagination',
+            clickable: true
+        },
+    });
+
 function further() {
     let tablet = document.querySelectorAll('.slider-slides .table');
     let tablet_see = document.querySelectorAll('.slider-slides .see');
@@ -10,21 +17,21 @@ function further() {
 
         if (but.textContent === 'Показать все') {
 
-            for (let i = 0; i < tablet.length; i++) {
-                tablet[i].classList.remove('table');
-                tablet[i].classList.add('see');
-            }
+            tablet.forEach( function (element){
+                element.classList.remove('table');
+                element.classList.add('see');
+            })
 
             but.textContent = 'Скрыть';
             but.classList.add('upheaval__bott','change');
             but.classList.remove('upheaval__top');
 
         } else {
-            for (let i = 0; i < tablet_see.length; i++) {
-                tablet_see[i].classList.remove('see');
-                tablet_see[i].classList.add('table');
-                but.textContent = 'Показать все';
-            }
+        tablet_see.forEach( function (element){
+                element.classList.remove('see');
+                element.classList.add('table');
+            })
+            but.textContent = 'Показать все';
             but.classList.remove('upheaval__bott', 'change');
             but.classList.add('upheaval__top');
         }
@@ -35,10 +42,10 @@ function further() {
 
         if (but.textContent === 'Показать все') {
 
-            for ( let i = 0; i < additionally.length; i++){
-                additionally[i].classList.remove('additionally');
-                additionally[i].classList.add('see_ad');
-            }
+        additionally.forEach( function (element){
+                element.classList.remove('additionally');
+                element.classList.add('see_ad');
+            })
 
             but.textContent = 'Скрыть';
             but.classList.add('upheaval__bott', 'change');
@@ -46,12 +53,11 @@ function further() {
 
         }else{
 
-            for ( let i = 0; i < additionally_see_ad.length; i++) {
-                additionally_see_ad[i].classList.remove('see_ad');
-                additionally_see_ad[i].classList.add('additionally');
-                but.textContent = 'Показать все';
-            }
-
+            additionally_see_ad.forEach( function (element){
+                element.classList.remove('see_ad');
+                element.classList.add('additionally');
+            })
+            but.textContent = 'Показать все';
             but.classList.remove('upheaval__bott', 'change');
             but.classList.add('upheaval__top');
         }
@@ -69,41 +75,38 @@ window.addEventListener('resize', function() {
     if (document.documentElement.clientWidth > 1120) {
 
         if (but.textContent !== 'Показать все') {
-            for (let i = 0; i < tablet_see.length; i++) {
-                tablet_see[i].classList.remove('see');
-                tablet_see[i].classList.add('table');
-            }
+            tablet_see.forEach( function (element){
+                element.classList.remove('see');
+                element.classList.add('table');
+            })
         }
     }
     if (document.documentElement.clientWidth > 1120) {
 
         if (but.textContent !== 'Показать все') {
-            for ( let i = 0; i < additionally.length; i++){
-                additionally[i].classList.remove('additionally');
-                additionally[i].classList.add('see_ad');
-            }
+            additionally.forEach( function (element){
+                element.classList.remove('additionally');
+                element.classList.add('see_ad');
+            })
         }
     }
 
     if (document.documentElement.clientWidth < 1120) {
 
         if (but.textContent !== 'Показать все') {
-            for (let i = 0; i < additionally_see_ad.length; i++) {
-                additionally_see_ad[i].classList.remove('see_ad');
-                additionally_see_ad[i].classList.add('additionally');
-            }
+            additionally_see_ad.forEach( function (element){
+                element.classList.remove('see_ad');
+                element.classList.add('additionally');
+            })
         }
     }
     if (document.documentElement.clientWidth < 1120) {
 
         if (but.textContent !== 'Показать все') {
-            for ( let i = 0; i < tablet.length; i++){
-                tablet[i].classList.remove('table');
-                tablet[i].classList.add('see');
-            }
+            tablet.forEach( function (element){
+                element.classList.remove('table');
+                element.classList.add('see');
+            })
         }
     }
 })
-
-
-
