@@ -103,7 +103,7 @@ body{
     width: 12px;
     height: 12px;
     background-color: #DDDDDD;
-    opacity: 1;
+    opacity: 0.5;
 }
 
 @media (min-width: 500px) {
