@@ -1639,4 +1639,10 @@ main{
     border: none;
 }
 
-
+@media (max-width: 1120px) and (max-height: 800px){
+  .burger,
+  .feedback,
+  .call{
+      height: 500vh;
+  }
+}
