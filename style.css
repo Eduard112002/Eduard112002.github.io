@@ -1472,7 +1472,7 @@ main{
     padding: 40px 32px 0 32px;
     max-width: 440px;
     min-width: 280px;
-    height: 220vh;
+    height: 227vh;
     z-index: 200;
     box-sizing: border-box;
 }
@@ -1561,7 +1561,7 @@ main{
 
 .feedback__but{
     position: absolute;
-    height: 200vh;
+    height: 227vh;
     min-width: 100%;
     background-color: rgba(255, 255, 255, 0.9);
     border: none;
@@ -1596,7 +1596,7 @@ main{
     padding: 40px 32px 0 32px;
     max-width: 440px;
     min-width: 280px;
-    height: 220vh;
+    height: 227vh;
     z-index: 200;
     box-sizing: border-box;
 }
@@ -1629,7 +1629,7 @@ main{
 
 .call__but{
     position: absolute;
-    height: 200vh;
+    height: 227vh;
     min-width: 100%;
     background-color: rgba(255, 255, 255, 0.9);
     border: none;
