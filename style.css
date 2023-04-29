@@ -489,9 +489,6 @@ main{
     }
 }
 
-
-/* 1.5.!!!*/
-
 .title{
     background-image: linear-gradient(270deg, #FFFFFF 0%, #F2F2F2 98.61%);
     border-top: 1px solid #D9FFF5;
@@ -1080,6 +1077,18 @@ main{
     }
 }
 
+@media(min-width: 1440px){
+    .tab-price td{
+        padding-left: 24px;
+    }
+}
+
+@media(min-width: 768px){
+    .tab-price th{
+        padding-left: 16px;
+    }
+}
+
 .tab-price td:last-child,
 .tab-price td:nth-child(2){
     border-radius: 6px;
@@ -1157,8 +1166,6 @@ main{
     max-width: 260px !important;
     margin-right: 16px !important;
 }
-
-/*1.4.*/
 
 .burger{
     position: absolute;
