@@ -1529,6 +1529,7 @@ main{
 
 .red{
     color: #FF3E79;
+    cursor: pointer;
 }
 
 .to-send{
