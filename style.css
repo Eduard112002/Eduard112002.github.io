@@ -451,12 +451,18 @@ main{
     padding-left: 30px;
     padding-top: 10px;
     color: #1B1C21;
+    position: relative;
 }
 
 .content__farther:before{
     content: url("img/arrow.svg");
-    transform: translateX(-24px);
+    left: 0;
     position: absolute;
+    animation-name: rotat;
+    animation-duration: 0.7s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-delay: 0.5s;
 }
 
 @media (min-width: 768px) {
